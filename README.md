@@ -14,12 +14,12 @@ http://zavedyaev.ru/bill-splitter
 Bill-Splitter-Server app is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
-##Requirements
+## Requirements
 
 1. mysql
 2. docker
 
-##Installation on server
+## Installation on server
 1. Create a database and user
     <pre>
     create database bill_splitter;

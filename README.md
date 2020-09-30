@@ -15,8 +15,10 @@ Bill-Splitter-Server app is licensed under a <a rel="license" href="http://creat
 
 
 ##Requirements
+
 1. mysql
 2. docker
+
 ##Installation on server
 1. Create a database and user
     <pre>

@@ -7,7 +7,7 @@ import org.springframework.web.server.ResponseStatusException
 import java.util.*
 
 
-@CrossOrigin(origins = ["http://zavedyaev.ru:80", "http://zavedyaev.ru"])
+@CrossOrigin(origins = ["http://localhost:3000", "http://zavedyaev.ru:80", "http://zavedyaev.ru", "https://zavedyaev.ru:8443", "https://zavedyaev.ru:443", "https://zavedyaev.ru"])
 @RestController
 @RequestMapping("/calculation")
 class CalculationController {

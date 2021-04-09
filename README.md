@@ -29,19 +29,19 @@ Bill-Splitter-Server app is licensed under a <a rel="license" href="http://creat
 2. build docker image and push it
     <pre>
     ./gradlew bootBuildImage
-    docker tag docker.io/library/bill-splitter-server:0.0.1-SNAPSHOT zavedyaev/bill-splitter-server:0.0.1-SNAPSHOT
-    docker push zavedyaev/bill-splitter-server:0.0.1-SNAPSHOT
+    docker tag docker.io/library/bill-splitter-server:0.0.12-SNAPSHOT zavedyaev/bill-splitter-server:0.0.12-SNAPSHOT
+    docker push zavedyaev/bill-splitter-server:0.0.12-SNAPSHOT
     </pre>
     or
     <pre>
     ./gradlew bootJar
-    docker build -t docker.io/library/bill-splitter-server:0.0.1-SNAPSHOT .
-    docker tag docker.io/library/bill-splitter-server:0.0.1-SNAPSHOT zavedyaev/bill-splitter-server:0.0.1-SNAPSHOT
-    docker push zavedyaev/bill-splitter-server:0.0.1-SNAPSHOT
+    docker build -t docker.io/library/bill-splitter-server:0.0.12-SNAPSHOT .
+    docker tag docker.io/library/bill-splitter-server:0.0.12-SNAPSHOT zavedyaev/bill-splitter-server:0.0.12-SNAPSHOT
+    docker push zavedyaev/bill-splitter-server:0.0.12-SNAPSHOT
     </pre>
 
 3. pull and run it on server
     <pre>
-    docker pull zavedyaev/bill-splitter-server:0.0.1-SNAPSHOT
-    docker run -p 8081:8081 --add-host=dockerhost:172.17.0.1 -d -m 314572800 --memory-swap 100000000 --restart always zavedyaev/bill-splitter-server:0.0.3-SNAPSHOT
+    docker pull zavedyaev/bill-splitter-server:0.0.12-SNAPSHOT
+    docker run -p 8081:8081 --add-host=dockerhost:172.17.0.1 -d -m 314572800 --memory-swap 600000000 --restart always -v /etc/letsencrypt/live/zavedyaev.ru:/certs zavedyaev/bill-splitter-server:0.0.12-SNAPSHOT
     </pre>
